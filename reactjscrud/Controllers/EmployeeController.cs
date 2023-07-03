@@ -62,6 +62,53 @@ namespace reactjscrud.Controllers
         }
 
 
+        [HttpPut("{id}")]
+        public async Task<ActionResult> PutEmployee(int id, Employee employee)
+        {
+            if(id != employee.ID)
+            {
+                return BadRequest();
+            }
+
+            _employeeContext.Entry(employee).State = EntityState.Modified;
+            try
+            {
+                await _employeeContext.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                throw;
+            }
+
+            return Ok();
+
+        }
+
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteEmployee(int id)
+        {
+            if(_employeeContext.Employees == null)
+            {
+                return NotFound();
+            }
+
+            var employee = await _employeeContext.Employees.FindAsync(id);
+            if(employee == null)
+            {
+                return NotFound();
+            }
+
+
+            _employeeContext.Employees.Remove(employee);
+            await _employeeContext.SaveChangesAsync();
+
+            return Ok();
+
+
+        }
+
+
 
     }
 }
