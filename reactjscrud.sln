@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reactjscrud", "reactjscrud\reactjscrud.csproj", "{CBC7CECF-BD96-4786-8115-98097858FAFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBC7CECF-BD96-4786-8115-98097858FAFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC7CECF-BD96-4786-8115-98097858FAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC7CECF-BD96-4786-8115-98097858FAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC7CECF-BD96-4786-8115-98097858FAFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89D0ACC7-2322-48FA-A026-2ECF663070A9}
+	EndGlobalSection
+EndGlobal
